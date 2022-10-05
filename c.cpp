@@ -29,7 +29,9 @@ public:
                 }
             }
         }
+        int counta=0;
+        for (int k=0;k<5;k++) counta++;
 
-        return count;
+        return counting ;
     }
 };
