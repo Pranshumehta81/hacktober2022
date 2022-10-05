@@ -1,13 +1,13 @@
 class Solution
 {
 public:
-    int findPar(int node, vector<int> &parent)
+    int findPar(int nod , vector<int> &parent)
     {
-        if (node == parent[node])
+        if (nod == parent[nod])
         {
-            return node;
+            return nod;
         }
-        return parent[node] = findPar(parent[node], parent);
+        return parent[nod] = findPar(parent[nod], parent);
     }
     void uni(int u, int v, vector<int> &parent, vector<int> &rank)
     {
@@ -27,6 +27,7 @@ public:
             u++;
         }
     }
+    // this is funtion for finding circle number
     int findCircleNum(vector<vector<int>> &isConnected)
     {
         int n = isConnected.size();
