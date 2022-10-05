@@ -27,6 +27,7 @@ public:
             u++;
         }
     }
+    // this is funtion for finding circle number
     int findCircleNum(vector<vector<int>> &isConnected)
     {
         int n = isConnected.size();
