@@ -6,7 +6,7 @@ public:
     {
         if (count > ans)
             return;
-
+// this is just for this purpose only
         if (src == dst)
         {
             ans = min(ans, count);
@@ -28,7 +28,7 @@ public:
         }
         visited[src] = 0;
     }
-    int findCheapestPrice(int n, vector<vector<int>> &flights, int src, int dst, int k)
+    int findingCheapestPrice(int n, vector<vector<int>> &flights, int src, int dst, int k)
     {
         vector<pair<int, int>> adj[n];
         for (int i = 0; i < flights.size(); i++)
@@ -40,6 +40,7 @@ public:
         }
 
         int ans = 1e9;
+        int adkj;
         int count = 0;
         vector<int> visited(n, 0);
         dfs(src, dst, k, count, ans, visited, adj);
