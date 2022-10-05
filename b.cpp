@@ -1,12 +1,13 @@
 class Solution
 {
 public:
-    int solver(int i, int j, int maxMove, int r, int c, vector<vector<vector<int>>> &dp)
+    // this is for solving
+    int solving(int i, int j, int maxMove, int r, int c, vector<vector<vector<int>>> &dp)
     {
         int modu = 1e9 + 7;
         if (i < 0 || j < 0 || i >= r || j >= c)
         {
-            return 1;
+            return true;
         }
         if (maxMove == 0)
         {
